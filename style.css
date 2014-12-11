@@ -1,0 +1,101 @@
+/*
+Theme Name: Theme One
+Theme URI: http://wordpress.org/themes/themeone
+Author: Ali Mehedi
+Author URI: http://ali.mehedi.com/
+Description: In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Version: 1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: themeone
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/*! normalize.css v3.0.2|MIT License|git.io/normalize */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block;}audio,canvas,progress,video{display:inline-block;vertical-align:baseline;}audio:not([controls]){display:none;height:0;}[hidden],template{display:none;}a{background-color:transparent;}a:active,a:hover{outline:0;}abbr[title]{border-bottom:1pxdotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}h1{font-size:2em;margin:0.67em0;}mark{background:#ff0;color:#000;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:1em40px;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}pre{overflow:auto;}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em;}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0;}button{overflow:visible;}button,select{text-transform:none;}button,htmlinput[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],htmlinput[disabled]{cursor:default;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}input{line-height:normal;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}fieldset{border:1pxsolid#c0c0c0;margin:02px;padding:0.35em0.625em0.75em;}legend{border:0;padding:0;}textarea{overflow:auto;}optgroup{font-weight:bold;}table{border-collapse:collapse;border-spacing:0;}td,th{padding:0;}
+
+.page {
+	background-color: #fff;
+	max-width: 1260px;
+	position: relative;
+}
+
+.page .header {
+	background-color: #000;
+}
+
+.page .header .menu {
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    opacity:0.4;
+    min-height: 76px; 
+    background-color: #000;
+}
+
+.page .content {
+	margin: 0 auto; width: 960px; background-color: #fff;
+}
+
+.page .header .slogan {
+	min-height: 50px; background-color: #e0e0e0;
+}
+
+.page .header .banner {
+	min-height: 460px; 
+	margin-top: 76px;
+	background: #f57c00 url(img/IMG_0059.JPG);
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.page .body {
+	background-color: #9fa8da; 
+}
+
+.page .body .content .inner {
+    margin-right: -300px;
+    float:left;
+    width:100%
+}
+
+.page .body .content .inner .left {
+    margin-right: 320px; /* 20px added for center margin */
+}
+
+.page .body .content .right-content {
+    width:300px;
+    float:left;
+    min-height: 550px;
+}
+
+.page .footer {
+	background-color: #000000; 
+}
+
+.page .footer .links {
+	min-height: 300px;
+}
+
+.page .footer .copyright {
+	min-height: 50px;
+}
+
+@media (max-width: 480px) {
+    .page .body .content .inner .left {
+        margin-right:0px;
+        margin-bottom:20px;
+        min-height: 550px;
+    }
+    .page .body .content .left-content {
+        margin-right:0px;
+        width:100%;
+    }
+    .page .body .content .right-content {
+        clear:left;
+    }
+}
